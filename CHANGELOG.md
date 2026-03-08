@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/coderxi1/PaidFly/compare/v1.1.0...v1.1.1) (2026-03-08)
+
+
+### Bug Fixes
+
+* update wrong message for stopping others flight ([5474b20](https://github.com/coderxi1/PaidFly/commit/5474b2056cd8f418fb99d32c18072124ddb74322))
+
 ## [1.1.0](https://github.com/coderxi1/PaidFly/compare/v1.0.0...v1.1.0) (2026-03-08)
 
 
