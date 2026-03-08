@@ -20,7 +20,7 @@ class PaidFlyPlugin : JavaPlugin() {
     override fun onLoad() {
         saveDefaultConfig()
         reloadConfig()
-        localizer = Localizer.of(plugin,Path.of("lang",config.getString("Language")))
+        localizer = Localizer.of(plugin) { "lang/" + plugin.config.getString("Language") }
     }
 
     override fun onEnable() {
