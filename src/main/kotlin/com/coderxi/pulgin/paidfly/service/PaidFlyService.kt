@@ -36,7 +36,6 @@ object PaidFlyService : BaseService() {
                     iterator.remove()
                     continue
                 }
-                //warn
                 if (!player.isFlying) continue
                 if (player.isGliding) continue
                 if (player.isOnGround) continue
