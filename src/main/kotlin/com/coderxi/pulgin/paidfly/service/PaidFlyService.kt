@@ -187,7 +187,7 @@ object PaidFlyService : BaseService() {
 
     fun stopFlyOther(sender: CommandSender, player: Player) {
         if (!isFlying(player)) return player.sendLocalMessage("System.TargetAlreadyOffFlying")
-        if(stopFly(player)) sender.sendLocalMessage("System.TargetOn","player" to player.name)
+        if(stopFly(player)) sender.sendLocalMessage("System.TargetOff","player" to player.name)
     }
 
     fun stopFlyByAuto(player: Player) {
