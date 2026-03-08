@@ -1,0 +1,46 @@
+System:
+  NoPermission: "&7[&b飞行&7] &c你没有使用此命令的权限"
+  UnknownCommand: "&7[&b飞行&7] &c错误的命令"
+  PlayerOnlyCommand: "&7[&b飞行&7] &c该命令仅允许玩家执行"
+  PlayerNotOnline: "&7[&b飞行&7] &c目标玩家不在线"
+  ReloadSuccess: "&7[&b飞行&7] 配置已重新加载!"
+  SelfAlreadyFlying: "&7[&b飞行&7] 你已在飞行!"
+  SelfAlreadyOffFlying: "&7[&b飞行&7] 你没在飞行!"
+  TargetAlreadyFlying: "&7[&b飞行&7] 玩家{player}已开启了飞行!"
+  TargetAlreadyOffFlying: "&7[&b飞行&7] 玩家{player}没在飞行!"
+  TargetNotEnough: "&7[&b飞行&7] &c玩家的{pay_type}不足，无法开启飞行!"
+  TargetOn: "&7[&b飞行&7] 你已为{player}开启飞行!"
+  TargetOff: "&7[&b飞行&7] 你已为{player}关闭飞行!"
+Notify:
+  Chat:
+    'On': "&7[&b飞行&7] 你已开启飞行，记得关注你的{pay_type}!"
+    'Off': "&7[&b飞行&7] 你已关闭飞行，小心受到摔落伤害哦~"
+    NotEnough: "&7[&b飞行&7] &c你的{pay_type}不足，无法开启飞行!"
+    AutoOffWarn: "&7[&b飞行&7] &c你的{pay_type}即将不足，将在{seconds}秒后关闭飞行!"
+    AutoOff: "&7[&b飞行&7] &c你的{pay_type}不足，已自动关闭飞行!"
+  Title:
+    'On': ["&a你已开启飞行", "记得关注你的{pay_type}"]
+    'Off': ["&c你已关闭飞行", "小心受到摔落伤害哦~"]
+    NotEnough: ["&c无法开启飞行", "&c你的{pay_type}不足"]
+    AutoOffWarn: ["&c将在{seconds}秒后关闭飞行", "你的{pay_type}即将不足"]
+    AutoOff: ["&c已自动关闭飞行", "&c你的{pay_type}不足"]
+  Action:
+    'On': "&a你已开启飞行，记得关注你的{pay_type}!"
+    'Off': "&c你已关闭飞行，小心受到摔落伤害哦~"
+    NotEnough: "&c你的{pay_type}不足，无法开启飞行!"
+    AutoOffWarn: "&c你的{pay_type}即将不足，将在{seconds}秒后关闭飞行!"
+    AutoOff: "&c你的{pay_type}不足，已自动关闭飞行!"
+Help:
+  Default:
+    - "&7-------[&b飞行帮助&7]-------"
+    - "&6/fly &8· &7切换飞行模式"
+    - "&6/fly on &8· &7开启飞行模式"
+    - "&6/fly off &8· &7关闭飞行模式"
+    - "&6/fly toggle &8· &7切换飞行模式"
+  Others:
+    - "&6/fly [on|off|toggle] &e<玩家> &8· &7为指定玩家切换飞行模式"
+  Admin:
+    - "&6/fly reload &8· &7重载配置文件"
+PayType:
+  Money: "游戏币"
+  Exp: "经验值"

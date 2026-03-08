@@ -1,0 +1,63 @@
+[**English**](https://github.com/coderxi1/PaidFly/blob/master/README.md)
+
+# PaidFly
+
+**PaidFly** 是一款为 Minecraft 服务器设计的插件，让玩家可以通过消耗（游戏币/经验值）进行飞行！
+
+## 功能
+
+- 支持玩家使用游戏币/经验值进行付费飞行
+- 支持Title、Action、音效提示
+- 支持倒计时提示
+
+## 安装
+
+1. 在[插件发布页](https://github.com/coderxi1/PaidFly/releases)下载最新版本的 **`PaidFly.jar`** (若服务器具有`kotlin-stdlib`可使用`PaidFly-kotlin.jar`)
+2. 将插件放入服务器 `plugins/` 文件夹  
+3. 若要允许玩家使用，给默认用户组设置`paidfly.fly`权限
+4. 如果使用经验飞行，请确保服务器已安装 **`Vault`** 经济插件。
+
+## 配置
+
+```yaml
+Main:
+  PayType: Money        #扣费模式
+  PayInterval: 3s       #扣费间隔
+  PayCost: 0.5          #每次扣多少
+  AutoOffThreshold: 0.5 #小于此值关闭飞行 推荐设置为和PayCost一致
+```
+
+## 指令
+
+所有指令均以 `/paidfly` 开头，可使用别名 `/fly`：
+
+| 指令 | 权限 | 描述 |
+|------|------|------|
+| `/fly` | `paidfly.fly` | 等于`/fly toggle`命令 |
+| `/fly on/off/toggle` | `paidfly.fly` | 切换飞行状态 |
+| `/fly on/off/toggle [player]` | `paidfly.others` | 切换其他玩家飞行状态，需要 `paidfly.others` 权限 |
+| `/fly help` | `paidfly.use` | 显示插件帮助信息（根据权限显示不同内容） |
+| `/fly reload` | `paidfly.reload` | 重载插件配置文件 |
+---
+
+## 权限
+
+| 权限节点 | 作用 |
+|-----------|------|
+| `paidfly.use` | 基础使用权限，查看帮助信息 |
+| `paidfly.fly` | 启用、关闭或切换飞行 |
+| `paidfly.others` | 对其他玩家操作飞行 |
+| `paidfly.reload` | 重载插件配置 |
+| `paidfly.admin` | 访问管理员子命令（如 `/paidfly reload`） |
+---
+
+## PlaceholderAPI
+
+| 占位符 | 描述 | 示例 |
+|------|------|------|
+| `%paidfly_status%` | 玩家当前是否处于付费飞行状态 | `true` / `false` |
+| `%paidfly_remaining_seconds%` | 玩家剩余飞行时间（秒） | `120` |
+| `%paidfly_pay_type%` | 当前使用的支付类型名称（本地化名称） | `金币` |
+| `%paidfly_pay_type_value%` | 当前支付类型对玩家计算出的原始数值 | `12.3333333334` |
+| `%paidfly_pay_type_value_fixed%` | 当前支付数值，默认保留 **1 位小数** | `12.3` |
+| `%paidfly_pay_type_value_fixed_<digits>%` | 当前支付数值，保留指定小数位数 | `%paidfly_pay_type_value_fixed_2%` → `12.34` |

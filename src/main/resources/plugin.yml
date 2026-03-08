@@ -1,0 +1,21 @@
+name: PaidFly
+version: {version}
+main: com.coderxi.pulgin.paidfly.PaidFlyPlugin
+api-version: '1.21'
+commands:
+  paidfly:
+    description: Plugin's main command
+    aliases: [ fly ]
+permissions:
+  paidfly.fly:
+    description: Allows toggling flight
+    default: op
+  paidfly.others:
+    description: Allows toggling flight for other players
+    default: op
+  paidfly.reload:
+    description: Allows reloading the plugin
+    default: op
+  paidfly.admin:
+    description: Access to admin commands
+    default: op

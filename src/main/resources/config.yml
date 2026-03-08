@@ -1,0 +1,36 @@
+Language: zh-CN.yml
+Main:
+  PayType: Money
+  PayInterval: 3s
+  PayCost: 0.5
+  AutoOffThreshold: 0.5
+Notify:
+  Chat:
+    Enable: true
+    AutoOffWarnCountdown: [10]
+  Title:
+    Enable: false
+    AutoOffWarnCountdown: [9,8,7,6,5,4,3,2,1]
+  Action:
+    Enable: true
+    AutoOffWarnCountdown: [9,8,7,6,5,4,3,2,1]
+  Sound:
+    Enable: true
+    'On': entity.player.levelup,0.6,1.2
+    'Off': block.anvil.land,0.6,0.4
+    AutoOffWarnCountdown:
+      - 9;entity.experience_orb.pickup,0.4,0.2
+      - 8;entity.experience_orb.pickup,0.4,0.2
+      - 7;entity.experience_orb.pickup,0.4,0.2
+      - 6;entity.experience_orb.pickup,0.4,0.2
+      - 5;entity.experience_orb.pickup,0.4,0.2
+      - 4;entity.experience_orb.pickup,0.4,0.2
+      - 3;entity.experience_orb.pickup,0.4,0.2
+      - 2;entity.experience_orb.pickup,0.4,0.2
+      - 1;entity.experience_orb.pickup,0.4,1
+Group:
+  Vip:
+    PayType: Money
+    PayInterval: 3s
+    PayCost: 0.2
+    AutoOffThreshold: 0.2
