@@ -4,6 +4,8 @@
 
 **PaidFly** 是一款为 Minecraft 服务器设计的插件，让玩家可以通过消耗（游戏币/经验值）进行飞行！
 
+![banner](https://github.com/user-attachments/assets/a36e817f-58ae-4890-9f6c-373ac6a22fca)
+
 ## 功能
 
 - 支持玩家使用游戏币/经验值进行付费飞行

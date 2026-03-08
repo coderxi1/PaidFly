@@ -4,6 +4,8 @@
 
 **PaidFly** is a plugin designed for Minecraft servers that allows players to fly by consuming (in-game currency/experience points)!
 
+![banner](https://github.com/user-attachments/assets/a36e817f-58ae-4890-9f6c-373ac6a22fca)
+
 ## Features
 
 - Supports players flying by paying with in-game currency/experience points
