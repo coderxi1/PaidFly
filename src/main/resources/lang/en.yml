@@ -1,0 +1,46 @@
+System:
+  NoPermission: "&7[&bFly&7] &cYou do not have permission to use this command"
+  UnknownCommand: "&7[&bFly&7] &cUnknown command"
+  PlayerOnlyCommand: "&7[&bFly&7] &cThis command can only be executed by players"
+  PlayerNotOnline: "&7[&bFly&7] &cThe target player is not online"
+  ReloadSuccess: "&7[&bFly&7] Configuration reloaded successfully!"
+  SelfAlreadyFlying: "&7[&bFly&7] You are already flying!"
+  SelfAlreadyOffFlying: "&7[&bFly&7] You are not flying!"
+  TargetAlreadyFlying: "&7[&bFly&7] Player {player} is already flying!"
+  TargetAlreadyOffFlying: "&7[&bFly&7] Player {player} is not flying!"
+  TargetNotEnough: "&7[&bFly&7] &cPlayer does not have enough {pay_type} to fly!"
+  TargetOn: "&7[&bFly&7] You have enabled flying for {player}!"
+  TargetOff: "&7[&bFly&7] You have disabled flying for {player}!"
+Notify:
+  Chat:
+    'On': "&7[&bFly&7] You have enabled flying. Keep an eye on your {pay_type}!"
+    'Off': "&7[&bFly&7] You have disabled flying. Watch out for fall damage~"
+    NotEnough: "&7[&bFly&7] &cYou do not have enough {pay_type} to fly!"
+    AutoOffWarn: "&7[&bFly&7] &cYour {pay_type} is running low. Flying will be disabled in {seconds} seconds!"
+    AutoOff: "&7[&bFly&7] &cYour {pay_type} ran out. Flying has been automatically disabled!"
+  Title:
+    'On': ["&aYou are now flying", "Keep an eye on your {pay_type}"]
+    'Off': ["&cFlying disabled", "Watch out for fall damage~"]
+    NotEnough: ["&cCannot fly", "&cYou do not have enough {pay_type}"]
+    AutoOffWarn: ["&cFlying will be disabled in {seconds}s", "Your {pay_type} is running low"]
+    AutoOff: ["&cFlying automatically disabled", "&cYour {pay_type} ran out"]
+  Action:
+    'On': "&aFlying enabled! Keep an eye on your {pay_type}!"
+    'Off': "&cFlying disabled. Watch out for fall damage~"
+    NotEnough: "&cYou do not have enough {pay_type} to fly!"
+    AutoOffWarn: "&cYour {pay_type} is running low. Flying will be disabled in {seconds} seconds!"
+    AutoOff: "&cYour {pay_type} ran out. Flying has been automatically disabled!"
+Help:
+  Default:
+    - "&7-------[&bFly Help&7]-------"
+    - "&6/fly &8· &7Toggle flying mode"
+    - "&6/fly on &8· &7Enable flying mode"
+    - "&6/fly off &8· &7Disable flying mode"
+    - "&6/fly toggle &8· &7Switch flying mode"
+  Others:
+    - "&6/fly [on|off|toggle] &e<player> &8· &7Toggle flying mode for a specific player"
+  Admin:
+    - "&6/fly reload &8· &7Reload the configuration file"
+PayType:
+  Money: "Money"
+  Exp: "Experience"
