@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/coderxi1/PaidFly/compare/v1.1.1...v1.1.2) (2026-03-24)
+
+
+### Bug Fixes
+
+* player quit cause stopAllFly ([cef2a5a](https://github.com/coderxi1/PaidFly/commit/cef2a5a0b3d0c6cd37b9555f0924e65028684555))
+
 ## [1.1.1](https://github.com/coderxi1/PaidFly/compare/v1.1.0...v1.1.1) (2026-03-08)
 
 
