@@ -15,6 +15,7 @@ import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
 import org.bukkit.event.EventHandler
 import org.bukkit.event.player.PlayerQuitEvent
+import org.bukkit.event.server.PluginDisableEvent
 import org.bukkit.scheduler.BukkitRunnable
 import org.bukkit.scheduler.BukkitTask
 import java.util.Collections
@@ -153,7 +154,7 @@ object PaidFlyService : BaseService() {
             stopFly(event.player)
         }
         @EventHandler
-        fun onPluginDisable(event: PlayerQuitEvent) {
+        fun onPluginDisable(event: PluginDisableEvent) {
             stopAllFly()
         }
     }
