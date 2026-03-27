@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.coderxi"
-version = System.getenv("GITHUB_REF_NAME")?.removePrefix("v") ?: "dev"
+version = System.getenv("APP_VERSION")?.removePrefix("v") ?: "dev"
 
 repositories {
     mavenCentral()
